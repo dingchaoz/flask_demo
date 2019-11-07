@@ -11,5 +11,5 @@ docker run --rm -p 5000:8080 test_ml_api
 ```
 4. Start a new terminal to fire curl message to ping the docker api, example message is following: 
 ```
-
+curl -X POST -H 'content-type: application/json' --data '{"exp":1800,"userid":"adfsa"}' http://127.0.0.1:5000/api
 ```
