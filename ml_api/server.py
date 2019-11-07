@@ -6,7 +6,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-# curl - X POST - H 'content-type: application/json' - -data '{"exp":1800,"userid":"adfsa"}' http: // 127.0.0.1: 5000 / api
+# curl -X POST -H 'content-type: application/json' --data '{"exp":1800,"userid":"adfsa"}' http://127.0.0.1:5000/api
 
 # Load the model
 model = pickle.load(open('model.pkl', 'rb'))
